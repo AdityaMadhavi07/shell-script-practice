@@ -1,0 +1,27 @@
+ ******* Log analysis report: ******* 
+
+date of analysis          : 26-06-02
+
+log filename              : /home/ubuntu/90DaysOfDevOps/week2/logs/BGL_2k.log
+
+total lines processed     : 2000 
+
+total error count         : 41
+
+------------------- Top 5 error messages --------------------
+
+     60          data TLB error interrupt
+     42          instruction cache parity error corrected
+     35          idoproxydb hit ASSERT condition: ASSERT expression=0 Source file=idotransportmgr.cpp Source line=1043 Function=int IdoTransportMgr::SendPacket(IdoUdpMgr*, BglCtlPavTrace*)
+     15          ciod: Error loading /bgl/apps/scaletest/performance/MINIBEN/mb_243_0810/allreduce.rts: invalid or missing program image, Exec format error
+      9          total of 1 ddr error(s) detected and corrected
+
+-------------------List of critical events-------------------
+
+290:- 1118772337 2005.06.14 R24-M0-N7-C:J06-U01 2005-06-14-11.05.37.845720 R24-M0-N7-C:J06-U01 RAS KERNEL FATAL critical input interrupt enable...0
+1469:- 1128027755 2005.09.29 R03-M1-ND-C:J14-U01 2005-09-29-14.02.35.872055 R03-M1-ND-C:J14-U01 RAS KERNEL INFO critical input interrupt (unit=0x0b bit=0x06): warning for torus y+ wire
+1518:- 1130255740 2005.10.25 R11-M1-N2-C:J09-U11 2005-10-25-08.55.40.146416 R11-M1-N2-C:J09-U11 RAS KERNEL INFO critical input interrupt (unit=0x0b bit=0x0b): warning for torus z- wire
+1751:- 1132062083 2005.11.15 R05-M0-NC-C:J04-U11 2005-11-15-05.41.23.201247 R05-M0-NC-C:J04-U11 RAS KERNEL INFO critical input interrupt (unit=0x0b bit=0x0a): warning for torus z+ wire, suppressing further interrupts of same type
+1810:- 1133447728 2005.12.01 R06-M0-N3-C:J13-U11 2005-12-01-06.35.28.126758 R06-M0-N3-C:J13-U11 RAS KERNEL INFO 10722 total interrupts. 0 critical input interrupts. 0 microseconds total spent on critical input interrupts, 0 microseconds max time in a critical input interrupt.
+
+ ******* END ******* 
